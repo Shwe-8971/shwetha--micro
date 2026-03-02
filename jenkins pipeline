@@ -1,7 +1,11 @@
-pipeline{
+pipeline {
     agent any
-      stages{
-       stage{"server hostname"}
-        sh'hostname'
-      }
+
+    stages {
+        stage('server hostname') {
+            steps {
+                sh 'hostname'
+            }
+        }
+    }
 }
