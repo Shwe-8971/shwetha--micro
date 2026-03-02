@@ -1,1 +1,8 @@
-welcome
+pipeline{
+    agent any
+      stages{
+       stage{"server hostname"}
+        sh'hostname'
+      }
+}
+
